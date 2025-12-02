@@ -1,0 +1,297 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+img, 
+svg, 
+video, 
+area {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+h1,
+h2, 
+h3, 
+h4,
+h5,
+a {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+}
+
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #2E323F;;
+}
+
+.site-tagline-hero {
+    padding: 1em 0;
+}
+
+.site-tagline-row {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-menu {
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger-menu:hover {
+    opacity: .6;
+    transition: .4s;
+    color: #a59678;
+}
+
+
+
+
+.nav-list {
+    list-style: none;
+    text-align: center;
+    padding: 0 0 2em 0;
+    margin: 0;
+    line-height: 3;
+}
+
+.navigation {
+    display: none;
+}
+
+.show {
+    display: block
+ }
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-link-button {
+ border: 1px solid black;
+ display:inline-block;
+ border-radius: 100px;
+ background-color: #a59678;;
+ padding: .1em 1.5em;
+}
+
+.nav-link-button:hover {
+    background-color: #fff;
+    color: #a59678;
+    transition: .6s;
+}
+
+
+.nav-link:hover {
+color: #a59678;
+font-size: 1.4rem;
+}
+
+
+.main {
+    background-color: #3b4050;
+    padding: 3em 0 10em 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+.main-title {
+    margin-bottom: 2em;
+}
+
+.main-subtitle {
+    font-size: 1.7rem;
+}
+.main-subtitle {
+    color: #a59678;
+    
+}
+.main-button {
+    background-color: #7F5AF0;
+    padding: .5em 1.3em;
+}
+
+
+.content-subtitle {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.content-column {
+   text-align: center;
+}
+
+.column-image {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 85px;
+    margin: 0 auto;
+    
+}
+
+
+
+.article {
+    padding: 3em 0 10em 0;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+.article-subtitle {
+    margin-bottom: .5em;
+    text-align: center;
+    
+}
+
+
+
+.article-item {
+    text-decoration: none;
+    color: #7F5AF0; 
+}
+
+.article-item:hover {
+    text-decoration: underline;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+
+
+.content {
+    padding: 5em 0 10em 0;
+    text-align: center;
+}
+
+
+.content-title {
+    color: #a59678;
+    margin-bottom: .5em;
+}
+
+
+.content-image {
+    width: 20%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 200px;
+    max-width: 120px;
+    
+}
+
+.background-image {
+    margin: 0 auto;
+    width: 60%;
+}
+
+@media(min-width: 1200px) {
+    .row {
+        display: flex;
+        align-items: center;
+        gap: 3em;
+    }
+
+
+    .row {
+        display: flex;
+        align-items: center;
+        gap: 5em;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .site-tagline-hero {
+        padding: .6em;
+    }
+
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+        width: 100%;
+        
+
+    }
+
+    .nav-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 1em;
+       
+
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .article {
+        text-align: left;
+    }
+
+    .article-item {
+        text-align: center;
+        line-height: 6.5;
+    }
+    .article-col-primary {
+        width: 35%;
+        margin-top: .5em;
+        text-align: left;
+    }
+
+    .article-col-secondary {
+        width: 65%;
+        text-align: left;
+    }
+
+    .article-col-secondary p {
+     line-height: 2.4;
+    }
+
+
+    .main {
+        padding: 5em 0 25em 0;
+    }
+
+    .content-row {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+    .content-column {
+        width: 100%;
+    }
+
+    .content-col {
+        margin-bottom: 5em;
+    }
+}
