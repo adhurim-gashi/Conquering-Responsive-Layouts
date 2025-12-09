@@ -104,9 +104,8 @@ p {
 
 
 .nav-link:hover {
-color: #a59678;
-font-size: 1.4rem;
-transition: .4s;
+transition: .2s;
+text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 }
 
 
@@ -293,7 +292,7 @@ transition: .4s;
         display: flex;
         margin: 0;
         padding: 0;
-        gap: 1em;
+        gap: 1.4em;
     }
 
     .hamburger-menu {

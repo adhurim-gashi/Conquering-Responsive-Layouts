@@ -98,18 +98,18 @@ p {
 }
 
 .nav-link-button:hover {
-    background-color: #fff;
     color: #a59678;
-    transition: .6s;
+    transition: .9s;
+    background-color: whitesmoke;
 }
 
 
 .nav-link:hover {
-color: #a59678;
-font-size: 1.4rem;
-transition: .4s;
-}
+    transition: .2s;
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 
+    }
+    
 
 
 .main {
@@ -140,13 +140,16 @@ transition: .4s;
     padding: .9em 1.3em;
     border-radius: 20px;
     
+    
 }
 
 .main-button:hover {
-  font-size: 1.6rem;
   transition: .5s;
   cursor: pointer;
   background-color: #a59678;
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+  font-weight: 800;
+  padding: .9em 1em;
 }
 
 
@@ -268,7 +271,7 @@ transition: .4s;
         display: flex;
         margin: 0;
         padding: 0;
-        gap: 1em;
+        gap: 1.4em;
        
 
     }
@@ -302,9 +305,27 @@ transition: .4s;
 
 
     .main {
-        padding: 5em 0 21em 0;
+        padding: 5em 0;
+        line-height: 5;
     }
 
+ 
+
+
+    .main-col p {
+        line-height: 2;
+    }
+
+
+
+    .main-subtitle {
+        font-size: 2rem;
+        margin-bottom: -2em;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
     .content-row {
         display: flex;
         align-items: center;
