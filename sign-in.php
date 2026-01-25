@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+session_start();
+header('Content-Type: text/html; charset=utf-8');
+?><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -64,10 +67,10 @@
               </li>
               <li class="nav-item"><a href="" class="nav-link">CONTACT</a></li>
               <li class="nav-item">
-                <a href="/html/sign-up.html" class="nav-link">SIGN UP</a>
+                <a href="/sign-up.php" class="nav-link">SIGN UP</a>
               </li>
               <li class="nav-item">
-                <a href="/html/sign-in.html" class="nav-link nav-link-button">SIGN IN</a>
+                <a href="/sign-in.php" class="nav-link nav-link-button">SIGN IN</a>
               </li>
             </ul>
           </nav>
@@ -75,8 +78,19 @@
       </div>
     </header>
 
+    <?php
+    if (isset($_SESSION['error'])) {
+        echo "<div class='alert alert-error'>" . htmlspecialchars($_SESSION['error']) . "</div>";
+        unset($_SESSION['error']);
+    }
+    if (isset($_SESSION['success'])) {
+        echo "<div class='alert alert-success'>" . htmlspecialchars($_SESSION['success']) . "</div>";
+        unset($_SESSION['success']);
+    }
+    ?>
+
     <section>
-      <form action="login.php" method="POST">
+      <form action="/login.php" method="POST">
         <div class="container">
           <div class="form-group">
             <label for="email">Email</label>
@@ -100,7 +114,7 @@
           </div>
           <button type="submit" class="btn btn-primary">Sign In</button>
           <p style="text-align: center; margin-top: 20px;">
-            Don't have an account? <a href="/html/sign-up.html">Sign up here</a>
+            Don't have an account? <a href="/sign-up.php">Sign up here</a>
           </p>
         </div>
       </form>

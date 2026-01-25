@@ -15,7 +15,6 @@ if (form) {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         
-        // Get form fields
         const name = document.getElementById("name").value.trim();
         const surname = document.getElementById("surname").value.trim();
         const email = document.getElementById("email").value.trim();
@@ -60,8 +59,6 @@ if (form) {
         // Display results
         if (isValid) {
             alert("✓ Form submitted successfully!\n\nName: " + name + "\nSurname: " + surname + "\nEmail: " + email);
-            // Uncomment the line below to actually submit the form
-            // form.submit();
         } else {
             alert("❌ Please fix the following errors:\n\n" + errorMessages.join("\n"));
         }

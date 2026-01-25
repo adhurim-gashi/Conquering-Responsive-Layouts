@@ -1,9 +1,13 @@
+<?php 
+session_start();
+header('Content-Type: text/html; charset=utf-8');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In - Conquering Responsive Layouts</title>
+    <title>Conquering Responsive Layouts</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
@@ -64,10 +68,10 @@
               </li>
               <li class="nav-item"><a href="" class="nav-link">CONTACT</a></li>
               <li class="nav-item">
-                <a href="/html/sign-up.html" class="nav-link">SIGN UP</a>
+                <a href="/sign-up.php" class="nav-link">SIGN UP</a>
               </li>
               <li class="nav-item">
-                <a href="/html/sign-in.html" class="nav-link nav-link-button">SIGN IN</a>
+                <a href="/sign-in.php" class="nav-link nav-link-button">SIGN IN</a>
               </li>
             </ul>
           </nav>
@@ -75,9 +79,40 @@
       </div>
     </header>
 
+    <?php
+    if (isset($_SESSION['error'])) {
+        echo "<div class='alert alert-error'>" . htmlspecialchars($_SESSION['error']) . "</div>";
+        unset($_SESSION['error']);
+    }
+    if (isset($_SESSION['success'])) {
+        echo "<div class='alert alert-success'>" . htmlspecialchars($_SESSION['success']) . "</div>";
+        unset($_SESSION['success']);
+    }
+    ?>
+
     <section>
-      <form action="login.php" method="POST">
+      <form action="/register.php" method="POST">
         <div class="container">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="surname">Surname: </label>
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Enter your Surname"
+              required
+            />
+          </div>
           <div class="form-group">
             <label for="email">Email</label>
             <input
@@ -98,9 +133,9 @@
               required
             />
           </div>
-          <button type="submit" class="btn btn-primary">Sign In</button>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
           <p style="text-align: center; margin-top: 20px;">
-            Don't have an account? <a href="/html/sign-up.html">Sign up here</a>
+            Already have an account? <a href="/sign-in.php">Sign in here</a>
           </p>
         </div>
       </form>
@@ -108,7 +143,7 @@
 
     <main class="main">
       <div class="container">
-        <h2 class="main-title">WELCOME BACK!</h2>
+        <h2 class="main-title">SIGN UP TO OUR COURSE!</h2>
       </div>
     </main>
 
