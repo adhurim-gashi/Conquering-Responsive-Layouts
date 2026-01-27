@@ -84,9 +84,10 @@ p {
     display: block
  }
 
-.nav-link {
+ .nav-link {
     text-decoration: none;
     color: #fff;
+    opacity: 1;
 }
 
 .nav-link-button {
@@ -95,21 +96,24 @@ p {
  border-radius: 100px;
  background-color: #a59678;;
  padding: .1em 1.5em;
+ text-decoration: none;
+ color: #fff;
 }
 
 .nav-link-button:hover {
+    background-color: #fff;
     color: #a59678;
-    transition: .9s;
-    background-color: whitesmoke;
+    transition: .4s;
 }
 
 
 .nav-link:hover {
-    transition: .2s;
-    text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+transition: .2s;
+text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+color: #a59678;
+opacity: 1;
+}
 
-    }
-    
 
 
 .main {

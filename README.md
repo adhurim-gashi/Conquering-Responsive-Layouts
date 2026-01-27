@@ -1,6 +1,5 @@
 # Conquering-Responsive-Layouts
 
-<<<<<<< HEAD
 This project was created as part of the Conquering Responsive Layouts course.
 The goal of the project is to build a modern, fully responsive multi-page website using only HTML, CSS and a small amount of JavaScript.
 

@@ -19,7 +19,7 @@ area {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -30,7 +30,6 @@ h4,
 h5,
 a {
     font-family: "Oswald", sans-serif;
-    margin: 0;
 }
 
 
@@ -62,7 +61,7 @@ p {
 
 .hamburger-menu:hover {
     opacity: .6;
-    transition: .4s;
+    transition: .9s;
     color: #a59678;
 }
 
@@ -88,6 +87,7 @@ p {
 .nav-link {
     text-decoration: none;
     color: #fff;
+    opacity: 1;
 }
 
 .nav-link-button {
@@ -96,37 +96,30 @@ p {
  border-radius: 100px;
  background-color: #a59678;;
  padding: .1em 1.5em;
+ text-decoration: none;
+ color: #fff;
 }
 
 .nav-link-button:hover {
     background-color: #fff;
     color: #a59678;
-    transition: .6s;
+    transition: .4s;
 }
 
 
 .nav-link:hover {
+transition: .2s;
+text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 color: #a59678;
-font-size: 1.4rem;
-transition: .4s;
+opacity: 1;
 }
 
 
-
-main {
-    padding: 2em 0
-}
-
-
-.main-title {
-    color: #a59678;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.section-title {
+    color: #fff;
     text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    line-height: 2;
+    margin-bottom: 1em;
 }
-
 
 
 
@@ -153,7 +146,7 @@ main {
         width: 90%;
     }
 
-    .navigation {
+  .navigation {
         display: flex;
         justify-content: flex-end;
         margin: 0 auto;
@@ -164,8 +157,7 @@ main {
         display: flex;
         margin: 0;
         padding: 0;
-        gap: 1em;
-
+        gap: 1.4em;
     }
 
 
@@ -204,7 +196,10 @@ form {
     padding: 1.6rem;
     box-shadow: 0 10px 30px rgba(2,8,23,0.6);
     border: 1px solid rgba(165,150,120,0.08);
+    width: 90%;
 }
+
+
 
 .form-group {
     display: block;
@@ -248,31 +243,35 @@ form {
     display: inline-block;
     font-family: "Oswald", sans-serif;
     font-size: 1rem;
-    padding: 0.65rem 1.25rem;
+    padding: 0.95rem 2rem;
     border-radius: 10px;
     border: none;
     cursor: pointer;
     text-decoration: none;
+    display: flex;
+    margin: 0 auto;
 }
+
 
 .btn-primary {
     background-color: #a59678;
     color: #0b0b0b;
     box-shadow: 0 8px 18px rgba(165,150,120,0.12);
     transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.18s ease;
+    margin-top: 3em;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(165,150,120,0.16);
     background-color: #c8b895;
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+    color: white
 }
 
 .btn-primary:active {
     transform: translateY(0);
 }
 
-/* Layout tweak: side-by-side name/surname on larger screens */
 @media (min-width: 720px) {
     .form-group.row {
         display: grid;
@@ -282,12 +281,25 @@ form {
     form { padding: 2rem; }
 }
 
-/* Keep the main title visually connected to the form */
 .main-title {
     margin-top: 0.6rem;
     margin-bottom: 1rem;
     font-size: 1.6rem;
 }
 
-/* Small utility spacing for center alignment */
 .form-actions { margin-top: 0.6rem; display:flex; gap:1rem; align-items:center }
+
+
+@media(min-width: 1200px) {
+    .form {
+        padding: 5em 0;
+    }
+
+   
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+  
+}
