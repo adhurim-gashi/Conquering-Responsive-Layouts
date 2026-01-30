@@ -23,9 +23,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/loader/loader.css" />
     <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
+    <div id="preloader"></div>
     <header class="header">
       <div class="site-tagline-hero">
         <div class="container row">
@@ -178,13 +180,18 @@
           <div class="footer-col">
             <ul class="footer-list">
               <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="" class="nav-link">About</a></li>
-              <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+              <li class="nav-item">
+                <a href="/html/about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="/html/contact.html" class="nav-link">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+    <script src="/loader/loader.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

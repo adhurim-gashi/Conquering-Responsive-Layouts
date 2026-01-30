@@ -23,9 +23,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/loader/loader.css" />
     <link rel="stylesheet" href="/css/contact.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </head>
   <body>
+    <div id="preloader"></div>
     <header class="header">
       <div class="site-tagline-hero">
         <div class="container row">
@@ -60,12 +63,47 @@
     </header>
 
     <main class="main">
-      <div class="main-card">
-        <h2 class="main-title">We're working on it!</h2>
-        <p>This site is currently under construction</p>
-        <p>Please check back soon.</p>
+      <div class="container">
+        <div class="main-text">
+          <h1 class="main-title">Need help with responsive design</h1>
+          <p>
+            Have a questions about responsive layouts, course content, or
+            anything related to web development?
+          </p>
+          <p>
+            Feel free to reach out. We're here to help you understand, improve,
+            and build better websites.
+          </p>
+        </div>
       </div>
     </main>
-    <script src="/js/main.js"></script>
+
+    <form class="contact-form">
+      <div class="form-row">
+        <div>
+          <label>Name</label>
+          <input type="text" placeholder="Your name" required />
+        </div>
+
+        <div>
+          <label>Surname</label>
+          <input type="text" placeholder="Your surname" required />
+        </div>
+      </div>
+
+      <label>Email</label>
+      <input type="email" placeholder="Your email" required />
+
+      <label>Message</label>
+      <textarea
+        rows="5"
+        placeholder="Write your message..."
+        required
+      ></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </body>
+  <script src="/loader/loader.js"></script>
+  <script src="/js/main.js"></script>
 </html>

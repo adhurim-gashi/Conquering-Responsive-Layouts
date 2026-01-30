@@ -110,6 +110,10 @@ p {
 }
 
 
+.main-text {
+    text-align: center;
+}
+
 .nav-link:hover {
 transition: .2s;
 text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
@@ -119,15 +123,6 @@ opacity: 1;
 
 
 
-
-main {
-    padding: 5em 0;
-    text-align: center;
-}
-
-.main-card {
-    text-align: center;
-}
 
 @media(min-width: 1200px) {
     .row {
