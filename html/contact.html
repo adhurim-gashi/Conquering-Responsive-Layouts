@@ -1,83 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conquering Responsive Layouts</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../loader/loader.css" />
-    <link rel="stylesheet" href="../css/contact.css" />
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  </head>
-  <body>
-    <div id="preloader"></div>
-    <header class="header">
-      <div class="site-tagline-hero">
-        <div class="container row">
-          <div class="site-tagline-row">
-            <a href="#">
-              <img src="../assets/logo.svg" alt="" class="site-logo" />
-            </a>
-            <a href="" class="hamburger-menu"><i class="ri-menu-line"></i></a>
-          </div>
-          <nav class="navigation">
-            <ul class="nav-list">
-              <!-- Display none in small screen sizes -->
-              <li class="nav-item">
-                <a href="../html/index.html" class="nav-link">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/about.html" class="nav-link">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/contact.html" class="nav-link">CONTACT</a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/sign-up.html" class="nav-link">SIGN UP</a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/sign-in.html" class="nav-link-button">SIGN IN</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <div class="container">
-        <div class="main-text">
-          <h1 class="main-title">Need help with responsive design</h1>
-          <p>
-            Have a questions about responsive layouts, course content, or
-            anything related to web development?
-          </p>
-          <p>
-            Feel free to reach out. We're here to help you understand, improve,
-            and build better websites.
-          </p>
-        </div>
-      </div>
-    </main>
-
+<<<<<<< SEARCH
     <form class="contact-form">
       <div class="form-row">
         <div>
@@ -103,7 +24,31 @@
 
       <button type="submit">Send Message</button>
     </form>
-  </body>
-  <script src="../loader/loader.js"></script>
-  <script src="../js/main.js"></script>
-</html>
+=======
+    <form class="contact-form" action="../php/contact.php" method="POST">
+      <div class="form-row">
+        <div>
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Your name" required />
+        </div>
+
+        <div>
+          <label>Surname</label>
+          <input type="text" name="surname" placeholder="Your surname" required />
+        </div>
+      </div>
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Your email" required />
+
+      <label>Message</label>
+      <textarea
+        name="message"
+        rows="5"
+        placeholder="Write your message..."
+        required
+      ></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+>>>>>>> REPLACE
