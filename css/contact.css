@@ -7,7 +7,7 @@ body {
     padding: 0;
     font-size: 1.2rem;
     line-height: 1.3;
-    background-color: lightcyan;
+   
     
 }
 
@@ -42,8 +42,17 @@ p {
 
 .header {
     background-color: #2E323F;;
+   
 }
 
+.header-title {
+    color: #a59678;
+}
+
+.header-text {
+    text-align: center;
+    color: #fff;
+}
 .site-tagline-hero {
     padding: 1em 0;
 }
@@ -148,19 +157,26 @@ main {
 }
 
 
+.main-text {
+    text-align: center;
+}
 
 
-* {
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
+
+
+.col-secondary {
+    width: 80%;
+    margin: 0 auto;
+}
   
   .contact-form {
     width: 100%;
-    padding: 20px;
-    background: #111;
+   
+    padding: 9em .5em;
+    background: #2E323F;;
     border-radius: 10px;
     color: #fff;
+    
   }
   
   .contact-form label {
@@ -172,7 +188,9 @@ main {
   
   .contact-form input,
   .contact-form textarea {
-    width: 100%;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
     padding: 12px 14px;
     margin-bottom: 14px;
     border-radius: 8px;
@@ -181,6 +199,7 @@ main {
     color: #fff;
     outline: none;
     transition: 0.2s ease;
+    font-size: 1.4rem;
   }
   
   .contact-form input:focus,
@@ -191,10 +210,10 @@ main {
   
   .contact-form button {
     width: 100%;
-    padding: 12px;
+    padding: 12px 1em;
     border-radius: 8px;
     border: none;
-    background:#2E323F;
+    background:#a59678;
     color: #fff;
     font-size: 18px;
     font-weight: bold;
@@ -207,77 +226,21 @@ main {
     opacity: 0.9;
   }
   
-  
-  @media (min-width: 600px) {
-    .contact-form {
-      width: 100%;
-      margin: 0 auto;
-      padding: 24px 28px;
-      
-    }
+
+  footer {
+    background-color: #2E323F;
+    opacity: .9;
+  }
+
+  .footer-text {
+    text-align:center;
+    margin-top: 12.5em;
+    padding: .1em;
+    color: white;
   }
   
-  /* Laptops and up */
-  @media (min-width: 900px) {
-    .contact-form {
-      width: 1000px;
-      padding: 2em 5em
-    }
-  }
-  
-  @media (min-width: 900px) {
-    .form-row {
-      display: flex;
-      gap: 12px;
-    }
-  
-    .form-row input {
-      flex: 1;
-    }
-  }
-  
-
-
-
-@media(min-width: 1200px) {
-
-    input,
-    label, 
-    textarea
-    {
-        font-size: 1.4rem;
-    }
-
-    .form-row {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .contact-form label {
-        font-size: 18px; 
-        font-weight: 600; 
-      }
-
-
-    .main-text {
-        text-align: center;
-    }
-    .row {
-        display: flex;
-        align-items: center;
-        gap: 5em;
-    }
-
-
-    .site-tagline-hero {
-        padding: .6em;
-    }
-
-
-    .container {
-        width: 90%;
-    }
-
+ 
+  @media (min-width: 800px) {
     .navigation {
         display: flex;
         justify-content: flex-end;
@@ -297,9 +260,59 @@ main {
     }
 
 
-
-
+    .contact-form {
+      width: 70%;
+      margin: 0 auto;
+      padding: 4em 2em;
+    }
   
-}
+    .form-row {
+      display: flex;
+      gap: 1.5em;
+      width: 100%;
+    }
+  
+    .form-row div {
+      flex: 1;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      font-size: 1.1rem;
+    }
+  
+    .contact-form textarea {
+      min-height: 160px;
+    }
+  
+    .contact-form button {
+      width: auto;
+      padding: 0.8em 2.5em;
+      display: block;
+      margin: 1em auto 0 auto;
+    }
+  }
 
 
+  @media(min-width: 1000px) {
+    .main {
+        padding: 5em 0;
+    }
+    .row {
+        display: flex;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      font-size: 1.6rem;
+    }
+
+    
+  }
